@@ -2,3 +2,5 @@
 Repository for Computational Methods in Mechanics in 2020
 
 Here's some changes for the first commit
+
+Added function that adds two numbers.
