@@ -4,7 +4,7 @@ close all
 
 a = 0.1; % m
 b = 0.2; % m
-omega = -1; % rad/s, also derivative(phi)
+omega = 1; % rad/s, also derivative(phi)
 phi = @(t) pi/6 + omega.*t;
 t = 0:0.001:4*pi;
 x = zeros(2, length(t));
@@ -29,7 +29,7 @@ end
 
 figure
 plot(t, x(1, :), t, x(2, :))
-legend("Angle theta", "Distance D", "Location", "southeast")
+legend("Angle theta", "Distance D")
 figure
 plot(t, x_vel(1, :), t, x_vel(2, :))
 legend("Rotational velocity", "Velocity of point B")
